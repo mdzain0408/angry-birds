@@ -15,7 +15,8 @@ var score = 0;
 var birds = [];
 
 function preload() {
-    getBackgroundImg();
+   // getBackgroundImg();
+    backgrondImg = loadImage("sprites/bg1.png")
    music = loadSound("sounds/bird_flying.mp3")
 }
 
@@ -60,7 +61,7 @@ function setup(){
 function draw(){
     if(backgroundImg)
         background(backgroundImg);
-    
+        
         noStroke();
         textSize(35)
         fill("white")
